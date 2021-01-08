@@ -258,6 +258,9 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="NAudio-Unity">
+      <HintPath>D:/code/Unity/BVHParse/Assets/Plugin/NAudio-Unity.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>D:/code/Unity/BVHParse/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>

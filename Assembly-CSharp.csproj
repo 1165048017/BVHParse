@@ -64,12 +64,15 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\BVHDriver.cs" />
     <Compile Include="Assets\Scripts\BVHParser.cs" />
+    <Compile Include="Assets\Scripts\MouseLookTest.cs" />
+    <Compile Include="Assets\Scripts\WavUtility.cs" />
     <None Include="Assets\Models\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
     <None Include="Assets\Models\Checkerboard.shader" />
     <None Include="Assets\Models\Rin New 3d - Anime Style\Advance Unlit Shader\Advance Unlit.shader" />
     <None Include="Assets\Models\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" />
     <None Include="Assets\Models\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
     <None Include="Assets\Models\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_hada.shader" />
+    <None Include="Assets\Models\Triplanar.shader" />
     <None Include="Assets\Models\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_fuku_ds.shader" />
     <None Include="Assets\Models\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_eyelash_blend.shader" />
     <None Include="Assets\Models\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_hada_blend.shader" />
@@ -259,6 +262,9 @@
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.13f1c1/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio-Unity">
+      <HintPath>D:/code/Unity/BVHParse/Assets/Plugin/NAudio-Unity.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
