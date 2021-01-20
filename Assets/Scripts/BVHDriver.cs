@@ -127,9 +127,9 @@ public class BVHDriver : MonoBehaviour
             }
             else
             {
-                WWW www = new WWW(url);
-                audioSource.clip = www.GetAudioClip(false, false);
-                //StartCoroutine(LoadMusic(audioPath.text));
+                //WWW www = new WWW(url);
+                //audioSource.clip = www.GetAudioClip(false, false);
+                StartCoroutine(LoadMusic(audioPath.text));
             }
         }
         else
