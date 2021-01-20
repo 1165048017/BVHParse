@@ -15,16 +15,16 @@ public class MouseLookTest : MonoBehaviour
     void Start()
     {
         lookOBJ = new GameObject();
-        lookOBJ.transform.position = player.position;
-        transform.LookAt(lookOBJ.transform);
+        lookOBJ.transform.position = player.position+Vector3.up;
+        this.transform.LookAt(lookOBJ.transform);
         offset = transform.position - player.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(lookOBJ.transform);
-        transform.position = player.position + offset;
+        this.transform.LookAt(lookOBJ.transform);
+        this.transform.position = player.position + offset;
         RotateView();
         ScrollView();
         TransformView();
@@ -58,7 +58,7 @@ public class MouseLookTest : MonoBehaviour
     {
         distance = offset.magnitude;
         distance -= Input.GetAxis("Mouse ScrollWheel") * scrollSpeed;
-        distance = Mathf.Clamp(distance, -5, 18);
+        distance = Mathf.Clamp(distance, -5, 50);
         offset = offset.normalized * distance;
     }
 
@@ -91,7 +91,6 @@ public class MouseLookTest : MonoBehaviour
                 transform.rotation = originalRotation;
             }
         }
-
         offset = transform.position - player.position;
     }
 }

@@ -160,7 +160,7 @@ public class BVHDriver : MonoBehaviour
                 bvh_leftleg = bvh_leftleg + bvhOffset[bm.bvh_name].sqrMagnitude;
             }
         }
-        scaleRatio = unity_leftleg / bvh_leftleg;        
+        scaleRatio = unity_leftleg / (10* bvh_leftleg);        
         frameIdx = 0;
     }
 
@@ -235,7 +235,7 @@ public class BVHDriver : MonoBehaviour
             {
                 anim.GetBoneTransform(HumanBodyBones.Hips).position = bvhPos[bp.root.name] * scaleRatio;
             }
-
+            audioSource.transform.position = anim.GetBoneTransform(HumanBodyBones.Hips).position;
             // draw bvh skeleton
             foreach (string bname in bvhHireachy.Keys)
             {
